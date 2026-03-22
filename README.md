@@ -18,7 +18,7 @@ sudo apt update
 sudo apt install fontconfig openjdk-21-jre
 java -version
 
-# Long Term Support release
+ Long Term Support release
 A LTS (Long-Term Support) release is chosen every 12 weeks from the stream of regular releases as the stable release for that time period. It can be installed from the debian-stable apt repository.
 
 sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
@@ -30,21 +30,22 @@ https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
 -sudo apt update
 -sudo apt install jenkins
 
-## Refer from https://www.jenkins.io/doc/book/installing/linux/
-
-
 #  Start Jenkins
-# You can enable the Jenkins service to start at boot with the command:
+You can enable the Jenkins service to start at boot with the command:
 sudo systemctl enable jenkins
 
-# You can start the Jenkins service with the command:
+You can start the Jenkins service with the command:
 sudo systemctl start jenkins
 
-# You can check the status of the Jenkins service using the command:
+You can check the status of the Jenkins service using the command:
 sudo systemctl status jenkins
+
+" Refer from https://www.jenkins.io/doc/book/installing/linux/ "
+
 
 # Steps to Set Security Group Inbound Rules in AWS
 # Step 1: Go to AWS EC2 Security Groups
+ 
 Log in to your AWS Management Console.
 Navigate to EC2 → Security Groups.
 Select the security group associated with your EC2 instance.
